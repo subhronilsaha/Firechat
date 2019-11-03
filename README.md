@@ -1,4 +1,5 @@
-# Firechat
+# Firechat 
+###### Version: 1
 
 Cloud based instant messaging app for iOS.
 
