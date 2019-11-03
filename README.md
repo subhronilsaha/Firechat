@@ -16,7 +16,7 @@ Cloud based instant messaging app for iOS.
 
 <img src="screenshots/chat-screen.PNG" width=300>
 
-###$ New Messages List
+#### New Messages List
 
 <img src="screenshots/new-messages-screen.PNG" width=300>
 
