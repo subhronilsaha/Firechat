@@ -26,5 +26,3 @@ Some screenshots with dummy users (from Naruto :D)
 
 <img src="screenshots/new-messages-screen.PNG" width=300>
 
-
-
