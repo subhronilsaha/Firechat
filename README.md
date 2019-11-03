@@ -4,7 +4,7 @@ Cloud based instant messaging app for iOS.
 
 ## Overview
 
-Firechat is a simple cloud based messaging service for iOS, which stores and fetches data from the Firebase servers. Authentication and Storage are also being handled by Firebase.  
+Firechat is a simple cloud based messaging service for iOS, which stores and fetches data from the Firebase servers. Authentication and Storage are also being handled By Firebase. 
 
 ## Screenshots
 
