@@ -4,6 +4,6 @@ Cloud based instant messaging app for iOS.
 
 ## Demo
 
-![](screenshots/register-screen.PNG)
+<img src="screenshots/register-screen.PNG" width=100>
 
 
