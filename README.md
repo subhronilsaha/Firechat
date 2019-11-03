@@ -1,2 +1,7 @@
 # Firechat
-Cloud based instant messaging app
+
+Cloud based instant messaging app for iOS.
+
+## Demo
+
+
