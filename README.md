@@ -4,6 +4,8 @@ Cloud based instant messaging app for iOS.
 
 ## Screenshots
 
+Some screenshots with dummy users (from Naruto :D)
+
 #### Register screen
 
 <img src="screenshots/register-screen.PNG" width=300>
