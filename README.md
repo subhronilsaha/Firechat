@@ -8,7 +8,8 @@ Firechat is a simple cloud based messaging service for iOS, which stores and fet
 
 ## Usage
 
-1. Clone the repository ```git git clone```
+1. Clone the repository to your system. 
+2. Navigate to ```Firechat/Firechat/Firechat.xcworkspace ```
 
 ## Screenshots
 
