@@ -6,6 +6,10 @@ Cloud based instant messaging app for iOS.
 
 Firechat is a simple cloud based messaging service for iOS, which stores and fetches data from the Firebase servers. User authentication and Media storage are also being handled By Firebase. 
 
+## Usage
+
+1. Clone the repository ```git git clone```
+
 ## Screenshots
 
 Some screenshots with dummy users (from Naruto :D)
