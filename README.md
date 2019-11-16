@@ -9,7 +9,8 @@ Firechat is a simple cloud based messaging service for iOS, which stores and fet
 ## Usage
 
 1. Clone the repository to your system. 
-2. Navigate to ```Firechat/Firechat/Firechat.xcworkspace ```
+2. Open ```Firechat.xcworkspace```
+3. Run the app on your Apple device or Simulator. 
 
 ## Screenshots
 
