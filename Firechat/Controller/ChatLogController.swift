@@ -18,6 +18,10 @@ class ChatLogController: UIViewController, UITextFieldDelegate, UITableViewDeleg
     
     @IBOutlet var messageTableView: UITableView!
     
+    @IBOutlet var messageTextContainerView: UIView!
+    
+    @IBOutlet var messageContainerHeight: NSLayoutConstraint!
+    
     @IBOutlet weak var messageTextField: UITextField!
     
     @IBOutlet weak var sendButton: UIButton!
@@ -57,12 +61,33 @@ class ChatLogController: UIViewController, UITextFieldDelegate, UITableViewDeleg
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Chats", style: .plain, target: self, action: #selector(popAllVC))
         
         observeMessages()
-            
+        
+        // Listen for Keyboard tap
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillChange), name: UIResponder.keyboardWillChangeFrameNotification, object: nil)
+
     }
     
     //MARK:- Selector functions
     @objc func doneEditing() {
         view.endEditing(true)
+        
+        // Decrease text field height
+        messageContainerHeight.constant = 60
+    }
+    
+    @objc func keyboardWillChange(notification: Notification) {
+        //print("Keyboard will show \(notification.name.rawValue)")
+        
+        // Get Keyboard Rectangle dimensions
+        guard let keyboardRect = (notification.userInfo?[UIResponder.keyboardFrameEndUserInfoKey] as? NSValue)?.cgRectValue else {
+            return
+        }
+        
+        // Increase textfield height on tap
+        messageContainerHeight.constant = keyboardRect.height + 55
+        
     }
     
     @objc func popAllVC() {

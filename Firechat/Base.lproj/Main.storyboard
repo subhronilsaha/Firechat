@@ -124,6 +124,9 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KGC-zz-2EG">
                                         <rect key="frame" x="8" y="8" width="305" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="gbh-7x-8ab"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
@@ -144,10 +147,10 @@
                                     <constraint firstItem="kcn-YQ-Ao0" firstAttribute="leading" secondItem="KGC-zz-2EG" secondAttribute="trailing" constant="8" id="HV5-gl-qRv"/>
                                     <constraint firstItem="kcn-YQ-Ao0" firstAttribute="leading" secondItem="KGC-zz-2EG" secondAttribute="trailing" constant="8" id="ICV-xL-JdV"/>
                                     <constraint firstItem="KGC-zz-2EG" firstAttribute="top" secondItem="AeL-8Y-VR6" secondAttribute="top" constant="8" id="Njn-Tq-iQg"/>
-                                    <constraint firstAttribute="bottom" secondItem="kcn-YQ-Ao0" secondAttribute="bottom" constant="17" id="XXe-N4-E3F"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="kcn-YQ-Ao0" secondAttribute="bottom" constant="17" id="XXe-N4-E3F"/>
                                     <constraint firstAttribute="trailing" secondItem="kcn-YQ-Ao0" secondAttribute="trailing" constant="8" id="aBR-ZG-Uz1"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="aGP-ru-2ls"/>
-                                    <constraint firstAttribute="bottom" secondItem="KGC-zz-2EG" secondAttribute="bottom" constant="17" id="aQh-nU-za2"/>
+                                    <constraint firstAttribute="height" constant="60" id="aGP-ru-2ls"/>
+                                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="KGC-zz-2EG" secondAttribute="bottom" constant="17" id="aQh-nU-za2"/>
                                     <constraint firstItem="KGC-zz-2EG" firstAttribute="leading" secondItem="AeL-8Y-VR6" secondAttribute="leading" constant="8" id="yxm-hB-B3c"/>
                                 </constraints>
                             </view>
@@ -172,7 +175,9 @@
                         <barButtonItem key="backBarButtonItem" title="Back" id="ycb-dP-att"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="messageContainerHeight" destination="aGP-ru-2ls" id="xDb-hO-pT2"/>
                         <outlet property="messageTableView" destination="5t1-DX-cGm" id="NF9-SM-aAS"/>
+                        <outlet property="messageTextContainerView" destination="AeL-8Y-VR6" id="fn9-b9-vww"/>
                         <outlet property="messageTextField" destination="KGC-zz-2EG" id="VKj-sM-aCB"/>
                         <outlet property="sendButton" destination="kcn-YQ-Ao0" id="V8z-hi-XDV"/>
                     </connections>
