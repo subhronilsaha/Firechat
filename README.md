@@ -14,6 +14,8 @@ Firechat is a simple cloud based messaging service for iOS, which stores and fet
 
 ## Screenshots
 
+<img src="mockup-1.png" width="1000">
+
 <img src="mockup.png" width="1000">
 
 Some screenshots with dummy users (from Naruto :D)
